@@ -1,0 +1,69 @@
+body{
+    background-image: url('https://content.instructables.com/ORIG/FGE/F6F0/K1NVATVK/FGEF6F0K1NVATVK.jpg?auto=webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-attachment: fixed; 
+} 
+
+#guess{
+    color: white;
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    font-size:0.7em;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin-top: 4em ;
+    font-size:2em;
+}
+
+#main{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin-top: 2em ;
+}
+
+#numberBox{
+    background-color: aqua;
+    margin: 1em;
+    padding: 0.5em;
+}
+
+#checkedButton{
+    font-weight: bold;
+    background-color: aqua;
+    padding: 0.5em;
+}
+
+#bottom{
+    color: white;
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    font-size:0.7em;
+ 
+  flex-direction: column;
+  justify-content: space-evenly;
+    display:flex;
+    align-items: center;
+    justify-content: center; 
+    margin-top: 5em ;
+  
+}
+
+#show-result{
+    font-size: 3em;
+    background-color:yellow;
+    color: crimson;
+  
+    
+   
+}
+/* 
+<img id="image-guess" src="https://content.instructables.com/ORIG/FGE/F6F0/K1NVATVK/FGEF6F0K1NVATVK.jpg?auto=webp" alt="guess-the-number">    -->
+   
+<img id="congrat" src="http://www.9to5carwallpapers.com/wp-content/uploads/2018/12/congratulations-animations-free-gif.gif" alt="congragulation"> -->
+  
+<img id="sorry" src="https://media3.giphy.com/media/xT1R9Wwabxini8lxO8/200.webp?cid=ecf05e47orce7ju5mj5ekma7alvhfe3tg8r5fdq0q57ibd8r&rid=200.webp" alt="sorry"> -->
+

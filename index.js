@@ -1,0 +1,39 @@
+
+
+let inputRandomNumber = Math.trunc(Math.random() * 100);
+let theResult = document.getElementById("show-result");
+
+const checkButton = document.getElementById('checkedButton');
+checkButton.addEventListener('click', guessNumber);
+
+function guessNumber(){
+    let writtenNumber = Number(document.getElementById('numberBox').value);
+    console.log(inputRandomNumber);
+    if (writtenNumber === inputRandomNumber ){
+        theResult.textContent = 'Congrats!!!!';
+    }else if (writtenNumber < inputRandomNumber ){
+        theResult.textContent = 'Try Higher Number!!!!';
+    }else if (writtenNumber > inputRandomNumber){
+        theResult.textContent = 'Try Lower Number!!!!';
+    }
+}
+
+let input = document.getElementById("numberBox");
+input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+   event.preventDefault();
+   document.getElementById("checkedButton").click();
+
+  }
+});
+
+
+
+const tryNumber = document.getElementById("numberOfAttempt");
+console.log(tryNumber.textContent);
+let counter = 0;
+checkButton.addEventListener("click", tryCounter);
+function tryCounter(){
+counter += 1;
+tryNumber.textContent = counter;
+}
