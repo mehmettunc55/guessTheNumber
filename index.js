@@ -8,7 +8,7 @@ checkButton.addEventListener('click', guessNumber);
 
 function guessNumber(){
     let writtenNumber = Number(document.getElementById('numberBox').value);
-    console.log(inputRandomNumber);
+    
     if (writtenNumber === inputRandomNumber ){
         theResult.textContent = 'Congrats!!!!';
     }else if (writtenNumber < inputRandomNumber ){
@@ -16,6 +16,7 @@ function guessNumber(){
     }else if (writtenNumber > inputRandomNumber){
         theResult.textContent = 'Try Lower Number!!!!';
     }
+    input.value = '';
 }
 
 let input = document.getElementById("numberBox");
@@ -23,8 +24,9 @@ input.addEventListener("keyup", function(event) {
   if (event.keyCode === 13) {
    event.preventDefault();
    document.getElementById("checkedButton").click();
-
+   input.value = '';
   }
+  
 });
 
 
